@@ -25,9 +25,6 @@ namespace ASP.NET_Core_EduHome.Controllers
         {
             List<Course> courses = await _context.Course.ToListAsync();
 
-
-
-
             CourseVM courseVM = new CourseVM
             {
                Courses=courses,
@@ -42,11 +39,17 @@ namespace ASP.NET_Core_EduHome.Controllers
         {
             Course course = await _context.Course.Where(m=>m.Id==id).Include(m => m.CourseFeatures).FirstOrDefaultAsync();
             List<CourseCategory> courseCategories = await _context.CourseCategories.ToListAsync();
+            Advertisment advertisment = await _context.Advertisment.FirstOrDefaultAsync();
+            List<Blog> blog = await _context.Blog.ToListAsync();
+            List<Tag> tags = await _context.Tags.ToListAsync();
 
             CourseDetailsVM coursedetailsVM = new CourseDetailsVM
             {
                 Course = course,
                 CourseCategories = courseCategories,
+                Advertisment = advertisment,
+                Blogs=blog,
+                Tags=tags,
             };
 
             return View(coursedetailsVM);

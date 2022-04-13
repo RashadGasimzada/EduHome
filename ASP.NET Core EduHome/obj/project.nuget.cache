@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GY2dp1zWfSQpiefpxEPN028d38ep060jkVlV5e88AYIY4mBsxctISUBf/uw5TPtw1vAnjd2ruwg72chpMQ24Aw==",
+  "dgSpecHash": "5d0zQIF9m2uSqTIlf300GnY/NBp38P85UbxAYnGpRILDvp+vb4DAMl5XlbXtzVtqEO1NXNi07HQxboS7oeng/Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\rasha\\OneDrive\\Рабочий стол\\ASP.NET Core EduHome\\ASP.NET Core EduHome\\ASP.NET Core EduHome.csproj",
+  "projectFilePath": "C:\\Users\\rasha\\OneDrive\\Рабочий стол\\New folder\\ASP.NET Core EduHome\\ASP.NET Core EduHome\\ASP.NET Core EduHome.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\rasha\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\3.1.23\\microsoft.aspnetcore.cryptography.internal.3.1.23.nupkg.sha512",
     "C:\\Users\\rasha\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\3.1.23\\microsoft.aspnetcore.cryptography.keyderivation.3.1.23.nupkg.sha512",

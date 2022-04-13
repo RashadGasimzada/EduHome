@@ -31,8 +31,11 @@ namespace ASP.NET_Core_EduHome
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"));
             });
             services.AddScoped<LayoutService>();
+            services.AddScoped<SideBarService>();
 
         }
+
+
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

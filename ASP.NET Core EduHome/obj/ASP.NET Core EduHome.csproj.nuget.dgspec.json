@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\rasha\\OneDrive\\Рабочий стол\\ASP.NET Core EduHome\\ASP.NET Core EduHome\\ASP.NET Core EduHome.csproj": {}
+    "C:\\Users\\rasha\\OneDrive\\Рабочий стол\\New folder\\ASP.NET Core EduHome\\ASP.NET Core EduHome\\ASP.NET Core EduHome.csproj": {}
   },
   "projects": {
-    "C:\\Users\\rasha\\OneDrive\\Рабочий стол\\ASP.NET Core EduHome\\ASP.NET Core EduHome\\ASP.NET Core EduHome.csproj": {
+    "C:\\Users\\rasha\\OneDrive\\Рабочий стол\\New folder\\ASP.NET Core EduHome\\ASP.NET Core EduHome\\ASP.NET Core EduHome.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rasha\\OneDrive\\Рабочий стол\\ASP.NET Core EduHome\\ASP.NET Core EduHome\\ASP.NET Core EduHome.csproj",
+        "projectUniqueName": "C:\\Users\\rasha\\OneDrive\\Рабочий стол\\New folder\\ASP.NET Core EduHome\\ASP.NET Core EduHome\\ASP.NET Core EduHome.csproj",
         "projectName": "ASP.NET Core EduHome",
-        "projectPath": "C:\\Users\\rasha\\OneDrive\\Рабочий стол\\ASP.NET Core EduHome\\ASP.NET Core EduHome\\ASP.NET Core EduHome.csproj",
+        "projectPath": "C:\\Users\\rasha\\OneDrive\\Рабочий стол\\New folder\\ASP.NET Core EduHome\\ASP.NET Core EduHome\\ASP.NET Core EduHome.csproj",
         "packagesPath": "C:\\Users\\rasha\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rasha\\OneDrive\\Рабочий стол\\ASP.NET Core EduHome\\ASP.NET Core EduHome\\obj\\",
+        "outputPath": "C:\\Users\\rasha\\OneDrive\\Рабочий стол\\New folder\\ASP.NET Core EduHome\\ASP.NET Core EduHome\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
