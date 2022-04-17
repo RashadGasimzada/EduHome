@@ -23,7 +23,19 @@
 <!-- Course Start -->
 <div class="course-area pt-150 pb-150">
     <div class="container">
-        
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="course-title">
+                    <h3>search courses</h3>
+                </div>
+                <div class="course-form">
+                    <form asp-controller="Course" id="search" asp-action="Search">
+                        <input type="search" placeholder="Search Course Title..." value="@ViewData["GetCourses"]" name="course" />
+                        <button type="submit">search</button>
+                    </form>
+                </div>
+            </div>
+        </div>
         <div class="row">
 
             @foreach (var course in Model.Courses.OrderByDescending(m=>m.Id).Take(9))

@@ -23,7 +23,10 @@ namespace ASP.NET_Core_EduHome.Controllers
 
         public async Task<IActionResult> Index()
         {
-            List<Course> courses = await _context.Course.ToListAsync();
+            List<Course> courses = await _context.Course.Where(m => m.IsDelete == false).ToListAsync();
+
+
+
 
             CourseVM courseVM = new CourseVM
             {
@@ -37,11 +40,11 @@ namespace ASP.NET_Core_EduHome.Controllers
         }
         public async Task<IActionResult> CourseDetails(int id)
         {
-            Course course = await _context.Course.Where(m=>m.Id==id).Include(m => m.CourseFeatures).FirstOrDefaultAsync();
-            List<CourseCategory> courseCategories = await _context.CourseCategories.ToListAsync();
-            Advertisment advertisment = await _context.Advertisment.FirstOrDefaultAsync();
-            List<Blog> blog = await _context.Blog.ToListAsync();
-            List<Tag> tags = await _context.Tags.ToListAsync();
+            Course course = await _context.Course.Where(m => m.IsDelete == false).Where(m=>m.Id==id).Include(m => m.CourseFeatures).FirstOrDefaultAsync();
+            List<CourseCategory> courseCategories = await _context.CourseCategories.Where(m => m.IsDelete == false).ToListAsync();
+            Advertisment advertisment = await _context.Advertisment.Where(m => m.IsDelete == false).FirstOrDefaultAsync();
+            List<Blog> blog = await _context.Blog.Where(m => m.IsDelete == false).ToListAsync();
+            List<Tag> tags = await _context.Tags.Where(m => m.IsDelete == false).ToListAsync();
 
             CourseDetailsVM coursedetailsVM = new CourseDetailsVM
             {
@@ -53,6 +56,17 @@ namespace ASP.NET_Core_EduHome.Controllers
             };
 
             return View(coursedetailsVM);
+        }
+        public async Task<IActionResult> Search(string course)
+        {
+            ViewData["GetCourses"] = course;
+
+            if (!String.IsNullOrEmpty(course))
+            {
+                List<Course> courseQuery = await _context.Course.Where(m => m.Title.Trim().ToLower().Contains(course.Trim().ToLower())).ToListAsync();
+                return View(courseQuery);
+            }
+            return View();
         }
 
     }
